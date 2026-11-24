@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebPilot AI</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header><span class="mark">✦</span><div><strong>WebPilot AI</strong><small>Current page companion</small></div></header>
+    <section class="page-card"><strong id="page-title">Reading current page…</strong><a id="page-url" target="_blank" rel="noreferrer"></a></section>
+    <label for="question">Ask about this page</label>
+    <textarea id="question" placeholder="Leave blank to summarize the page"></textarea>
+    <div class="actions">
+      <button id="analyze" class="primary">Summarize / answer</button>
+      <button id="tables">Extract tables</button>
+      <button id="send">Send to workspace</button>
+    </div>
+    <div id="status" role="status"></div>
+    <section id="answer" hidden></section>
+    <section id="table-results" hidden></section>
+    <script src="popup.js"></script>
+  </body>
+</html>

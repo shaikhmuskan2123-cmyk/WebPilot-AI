@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "WebPilot AI Browser Companion",
+  "version": "0.3.0",
+  "description": "Summarize and extract information from the active page with WebPilot AI.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "action": {
+    "default_title": "WebPilot AI",
+    "default_popup": "popup.html"
+  }
+}
